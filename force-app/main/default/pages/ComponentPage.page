@@ -1,0 +1,28 @@
+<!--
+  @Page Name          : ComponentPage.page
+  @Description        : 
+  @Author             : James Loghry (Demand Chain)
+  @Group              : 
+  @Last Modified By   : James Loghry (Demand Chain)
+  @Last Modified On   : 3/15/2019, 9:43:58 AM
+  @Modification Log   : 
+  ==============================================================================
+  Ver         Date                     Author      		      Modification
+  ==============================================================================
+  1.0    3/15/2019, 9:43:58 AM   James Loghry (Demand Chain)     Initial Version
+-->
+<apex:page standardController="Account">
+    <apex:includeLightning />
+	<div id="AccountContainer" />
+ 	<script>
+ 		$Lightning.use("c:GenericLightningOutApp", function() {
+ 			$Lightning.createComponent(
+                "c:AccountWrapper",
+ 				{},
+ 				"AccountContainer",
+ 				function(cmp) {
+ 				}
+            );
+ 		});
+	</script>
+</apex:page>

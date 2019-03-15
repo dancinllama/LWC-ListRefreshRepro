@@ -1,0 +1,17 @@
+<!--
+  @Component Name     : AccountWrapper.cmp
+  @Description        : 
+  @Author             : James Loghry (Demand Chain)
+  @Group              : 
+  @Last Modified By   : James Loghry (Demand Chain)
+  @Last Modified On   : 3/15/2019, 9:45:55 AM
+  @Modification Log   : 
+  ==============================================================================
+  Ver         Date                     Author      		      Modification
+  ==============================================================================
+  1.0    3/15/2019, 9:45:55 AM   James Loghry (Demand Chain)     Initial Version
+-->
+<aura:component >
+    <aura:attribute name="recordId" type="String" />
+    <c:account recordId="{!v.recordId}" />
+</aura:component>
